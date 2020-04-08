@@ -36,7 +36,10 @@ const getPolls = () => {
   return Poll.find({}).exec();
 };
 
+//IGNORE COMPLEXITY in this function. Don't worry about trying to understand it.
 const upvotePollOption = (pollId, optionId) => {
+  //this function takes a poll and an option and, in the db,
+  //it increases the "votes" count by 1 for that option.
   return Poll.findById(pollId).exec()
     .then((poll) => {
       const { options } = poll;
