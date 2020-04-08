@@ -55,25 +55,6 @@ const upvotePollOption = (pollId, optionId) => {
     });
 };
 
-
-// const savePoll = () => {
-//   const newPoll = new Poll({
-//     name: 'Poop Smoothie',
-//     options: [
-//       {
-//         name: 'gross',
-//         votes: 0,
-//       },
-//       {
-//         name: 'delicious',
-//         votes: 0,
-//       },
-//     ],
-//   });
-
-//   return newPoll.save();
-// };
-
 module.exports = {
   savePoll,
   getPolls,
